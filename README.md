@@ -209,3 +209,4 @@ https://colab.research.google.com/drive/1gLEP8M_fCceKJ539Kvme_6fenev_Cfm3#scroll
 ```
 $ deactivate
 ```
+##Thanking You for viewing our repository.We will be updating more till mid of december , stay tuned.
