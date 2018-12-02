@@ -55,3 +55,157 @@ To make this process simple we have provided an desktop application interface us
 2. For Images
   -- We would be converting images into pdf using FPDF for the final Challenge but due to some technical glitch in GUI we did not introduced feature in this version
  
+## Installation Procedure for the Application
+#### Install Python3.6 from this link even if you have different python installed on your system this link would work
+```
+http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/
+```
+###### Install package installer pip for python3.6
+```
+$ wget https://bootstrap.pypa.io/get-pip.py
+$ sudo python3 get-pip.py
+```
+###### Install virtualenv package in python
+
+```
+$ sudo pip install virtualenv
+$ virtualenv venv
+$ . venv/bin/activate # for activation of the virtualenv 
+```
+
+Now you will find ```(venv)``` on the next line
+
+###### This will help you to not interfare with package installed in your system
+
+to deactivate this use do it after all our work is complete
+```$deactivate```
+
+
+####Install pandas 0.23.4
+
+we would be installing pandas from source
+```
+sudo pip install https://files.pythonhosted.org/packages/e1/d8/feeb346d41f181e83fba45224ab14a8d8af019b48af742e047f3845d8cff/pandas-0.23.4-cp36-cp36m-manylinux1_x86_64.whl
+```
+
+if you require different version of pandas for new python release please refer this link
+
+```
+https://pypi.org/project/pandas/#files
+```
+
+####Install openCV
+```
+this link would work for ubuntu14 also so its fine if you have earlier version of ubuntu
+https://www.pyimagesearch.com/2018/05/28/ubuntu-18-04-how-to-install-opencv/
+```
+
+####we have already completed
+###### SKIP Step #3: Configure your Python 3 environment in pyimagesearch blog
+
+
+###### This installation would only work if python3.6 & Pandas 0.23.4 & openCV  is installed CORRECTLY else try again
+
+### Cameplot installation instructions
+```
+$ sudo apt install python-tk ghostscript
+```
+Run the following to check the ghostscript version.
+```
+$ gs -version
+```
+```
+sudo pip install camelot-py
+```
+
+#### Things are not going the same way Dont Worry!
+```
+https://camelot-py.readthedocs.io/en/latest/user/install.html#install
+``` 
+#### Want to add some Extra Functionality refer to cameplot documentation
+```
+https://media.readthedocs.org/pdf/camelot-py/latest/camelot-py.pdf
+```
+
+#### Few more Installation
+```
+pip install pymysql
+pip install argparse
+pip install 
+
+```
+
+### Update for the Application
+
+#### If evrything is installed in correct Manner then Script would work
+### Updated Version for moving data to mysql
+````
+import pymysql
+import argparse
+import camelot
+
+parser = argparse.ArgumentParser(description='PDF Page to SQL')
+parser.add_argument('-i','--input',help="PDF file name",required=True)
+parser.add_argument('-p','--page',help="Enter page num",required=True)
+
+args = parser.parse_args()
+
+#show Values
+print("input file name {}".format(args.input))
+print("Page num is {}".format(args.page))
+
+tables = camelot.read_pdf(args.input,pages=args.page)
+tables[0].to_csv('foo.csv')
+tables.export('foo.csv',f='csv')
+
+data = tables[0].df
+# print(data)
+
+user = 'root'
+passw = 'root'
+host = 'localhost'
+database = 'data_2'
+
+conn = pymysql.connect(host=host, user=user, passwd = passw, unix_socket="/var/run/mysqld/mysqld.sock")
+
+conn.cursor().execute("CREATE DATABASE IF NOT EXISTS {0}".format(database))
+
+conn = pymysql.connect(host=host,
+						user=user,
+					 	passwd = passw,
+					 	db = database,
+					 	charset = 'utf8')
+
+data.to_sql(name = database, con = conn, if_exists = 'replace')
+````
+
+##### To run script
+```
+python3 scriptName -i pdfName.pdf -p 61
+```
+here input file stands for -i input file pdfName
+and -p stands for page number
+
+##### Note
+After the script is completed you will find a database named data_2 in which table would be found
+
+Change these details according to you
+user = 'root'
+passw = 'root'
+host = 'localhost'
+database = 'data_2'
+
+1.This will work for ONLY MYSQL
+2.For Only ONE PAGE ONE TABLE
+3.For Simple use case you will find foo.csv whenever this scipt is used for that perticular table
+
+###### Previous Talk with Developer
+```
+https://github.com/socialcopsdev/camelot/issues/120
+https://colab.research.google.com/drive/1gLEP8M_fCceKJ539Kvme_6fenev_Cfm3#scrollTo=TO_eCo_uYwDV
+```
+
+#### 
+```
+$ deactivate
+```
