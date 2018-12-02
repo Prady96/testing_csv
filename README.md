@@ -41,6 +41,9 @@ Best thing of our methodology is that it can be combined with any different numb
 
 To make this process simple we have provided an desktop application interface using tkinter
 
+### Desktop Images
+[Desktop Application](https://i.imgur.com/nOAJ4So.png)
+[Locating File](https://i.imgur.com/DWzO4tN.png)
 
 ### Cons
 1. This project does not work for streaming tables in PDFs
