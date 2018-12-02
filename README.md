@@ -45,6 +45,11 @@ To make this process simple we have provided an desktop application interface us
 ![Desktop Application](https://raw.githubusercontent.com/Prady96/testing_csv/master/Screenshot%20from%202018-12-02%2023_06_16.png)
 ![Browse File](https://raw.githubusercontent.com/Prady96/testing_csv/master/Screenshot%20from%202018-12-02%2023_06_23.png)
 
+![](https://raw.githubusercontent.com/Prady96/testing_csv/master/Screenshot%20from%202018-12-02%2023%3A37%3A15.png)
+![](https://raw.githubusercontent.com/Prady96/testing_csv/master/Screenshot%20from%202018-12-02%2023%3A37%3A22.png)
+![](https://raw.githubusercontent.com/Prady96/testing_csv/master/Screenshot%20from%202018-12-02%2023%3A37%3A39.png)
+![](https://raw.githubusercontent.com/Prady96/testing_csv/master/Screenshot%20from%202018-12-02%2023%3A38%3A06.png)
+
 ### Cons
 1. This project does not work for streaming tables in PDFs
 2. For Images
