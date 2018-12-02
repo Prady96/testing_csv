@@ -81,7 +81,7 @@ to deactivate this use do it after all our work is complete
 ```$deactivate```
 
 
-####Install pandas 0.23.4
+#### Install pandas 0.23.4
 
 we would be installing pandas from source
 ```
@@ -94,13 +94,13 @@ if you require different version of pandas for new python release please refer t
 https://pypi.org/project/pandas/#files
 ```
 
-####Install openCV
+#### Install openCV
 ```
 this link would work for ubuntu14 also so its fine if you have earlier version of ubuntu
 https://www.pyimagesearch.com/2018/05/28/ubuntu-18-04-how-to-install-opencv/
 ```
 
-####we have already completed
+#### we have already completed
 ###### SKIP Step #3: Configure your Python 3 environment in pyimagesearch blog
 
 
