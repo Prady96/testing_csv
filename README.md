@@ -1,4 +1,12 @@
-# testing_csv
+testing_csv
+=============
+---
+Updated Version 2.0
+--------------------
+It is development stage would be updated soon by the end of march
+#### [testing_csv 2.0 updated version link](https://github.com/Prady96/testing_csv/tree/develop/develop)
+
+----
 In this we have converted PDF tables to xml and json files and provided them a gui Interface
 
 #### Project Description
@@ -199,14 +207,14 @@ database = 'data_2'
 2.For Only ONE PAGE ONE TABLE
 3.For Simple use case you will find foo.csv whenever this scipt is used for that perticular table
 
-###### Previous Talk with Developer
+Previous Talk with Developer
+----------------------------
 ```
 https://github.com/socialcopsdev/camelot/issues/120
 https://colab.research.google.com/drive/1gLEP8M_fCceKJ539Kvme_6fenev_Cfm3#scrollTo=TO_eCo_uYwDV
 ```
 
-#### 
 ```
 $ deactivate
 ```
-##Thanking You for viewing our repository.We will be updating more till mid of december , stay tuned.
+## Thanking You for viewing our repository.We will be updating more till mid of december , stay tuned.
