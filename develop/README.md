@@ -17,7 +17,7 @@ Updates
 
 | Tasks     |  Dated |
 |-----------|--------|
-|*Complete GUI development for client side Application*| 3rd Feb 2019 |
+|~~Complete GUI development for client side Application~~| 3rd Feb 2019 |
 |*Complete development for Machine learning algorithem*|  |
 |*Testing Different Use Cases*|  |
 |*Deployment of the model*||
@@ -27,6 +27,7 @@ ScreenShots
 
 ![](https://raw.githubusercontent.com/Prady96/testing_csv/develop/develop/SS_tcsv_2.0.png)
 
-**Thanking You for viewing our repository.We will be updating more till end of March , stay tuned.**
+
+
 
 
