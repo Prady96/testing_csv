@@ -17,7 +17,7 @@ Updates
 
 | Tasks     |  Dated |
 |-----------|--------|
-|*Complete GUI development for client side Application*| 3rd Feb 2019 |
+|~~Complete GUI development for client side Application~~| 3rd Feb 2019 |
 |*Complete development for Machine learning algorithem*|  |
 |*Testing Different Use Cases*|  |
 |*Deployment of the model*||
